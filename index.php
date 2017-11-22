@@ -21,3 +21,4 @@ if(is_file('core/controller/'.$accion.'Controller.php'))
     require_once 'core/controller/ErrorController.php';
 }
 ob_end_flush();
+//reparando sistema git
