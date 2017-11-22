@@ -1,0 +1,30 @@
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <?php include 'core/view/header_login.phtml'; ?>
+        <div class="container-fluid">
+            <div class="row">
+                <br><br><br><br>
+                <div class="col-xs-12 login">
+                    <form class="form-inline text-center" action="" method="post">
+                        <div class="form-group">
+                            <label for="exampleInputName2">Usuario</label>
+                            <input type="text" class="form-control" name="admin_user" placeholder="Usuario" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail2">Contraseña</label>
+                            <input type="password" class="form-control" name="admin_pass" placeholder="Contraseña" required>
+                        </div>
+                        <input type="hidden" name="admin_grabar" value="si">
+                        <button type="submit" class="btn btn-success">Iniciar</button>
+                      
+                    </form>
+                </div>
+            </div>            
+        </div>
+        <?php include 'core/inc/footer_index.php'?>
+    </body>
+</html>

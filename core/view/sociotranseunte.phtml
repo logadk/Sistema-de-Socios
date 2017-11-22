@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <?php include 'core/inc/header_admin.php'; ?>
+        <div class="container">
+            <div class="row">
+                <div class="panel panel-info">
+                    <div class="panel-heading">Socio Transeunte</div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" action="">
+                            <div class="form-group">
+                                <div class="col-sm-1 col-md-1">
+                                    <button type="button" class="btn btn-primary" title="Buscar" id="st_buscar"><span class="glyphicon glyphicon-search"></span></button>
+                                </div>
+                                <label class="col-sm-1 control-label">Rut</label>
+                                <div class="col-sm-3 col-md-2">
+                                    <input id="sa_rut" class="form-control" type="text" placeholder="Rut" required disabled>
+                                </div>
+                                <label class="col-sm-1 control-label">Nombres</label>
+                                <div class="col-sm-5 col-md-6">
+                                    <input id="sa_nombres" class="form-control" type="text" placeholder="Nombres" required disabled>
+                                </div>
+                                <div class="col-sm-1">
+                                    <button type="button" class="btn btn-primary" title="Agregar" id="st_agregar">&nbsp;<span class="glyphicon glyphicon-new-window"></span>&nbsp;</button>
+                                </div>
+                            </div>                            
+                        </form>
+                        <br>
+                        <br>
+                        <table class="table table-striped display" id="st_tabla">
+                            <thead>
+                                <tr>
+                                    <th>Rut</th>
+                                    <th>Nombre</th>                        
+                                </tr>
+                            </thead>
+                            <tbody id="st_tbody">
+                                
+                            </tbody>                                                                                           
+                        </table>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <?php include 'core/view/modal_sa_buscar.php';?>
+        <?php include 'core/view/modal_transeunte.php';?>
+        <?php include 'core/inc/footer_index.php'?>
+        <script src="style/js/fsocio_transeunte.js" type="text/javascript"></script>
+    </body>
+    
+</html>

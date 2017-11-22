@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15-01-2017, 15:25:43
+    Author     : Evaristo Inzulza Rojas
+*/
+body
+{
+    min-height: 600px;
+    background-image: url("/style/image/puntilla_fondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.panel-info
+{
+/*    min-height: 300px;
+    background-image: url("/style/image/puntilla_fondo.png");
+    background-repeat: no-repeat;
+    background-position: center;*/
+    background-color: transparent;
+}
+
+.invi
+{
+    display: none;    
+}
+.visible
+{
+    display: inherit;
+}

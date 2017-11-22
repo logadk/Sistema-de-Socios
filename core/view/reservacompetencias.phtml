@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <?php include 'core/inc/header_admin.php' ?>
+        <div class="container">
+            <div class="row">
+                <div class="panel panel-info">
+                    <div class="panel-heading">Reserva Canchas</div>
+                    <div class="panel-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-1">
+                                    <button type="button" class="btn btn-primary" title="Buscar" id="rc_buscar">&nbsp;<span class="glyphicon glyphicon-search"></span>&nbsp;</button>
+                                </div>
+                                <label class="col-sm-1 col-md-1 control-label">Socio</label>
+                                <div class="col-sm-3 col-md-3">
+                                    <input id="rc_rut" class="form-control" type="text" placeholder="Rut" required disabled>
+                                </div>
+                                <label class="col-sm-1 control-label">Nombres</label>
+                                <div class="col-sm-6 col-md-6">
+                                    <input id="rc_nombres" class="form-control" type="text" placeholder="Nombres" required disabled>
+                                </div>                                                               
+                            </div>                            
+                            <div class="form-group">
+                                <label class="col-xs-12 col-sm-offset-1 col-sm-1 col-md-offset-1 col-md-1 control-label">ID</label>
+                                <div class="col-xs-12 col-sm-2 col-md-1">
+                                    <input id="rc_id" class="form-control" type="text" placeholder="ID" required disabled>
+                                </div>
+                                <label class="col-xs-12 col-sm-2 col-md-offset-2 col-md-1 control-label">Descripción</label>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <input id="rc_descripcion" class="form-control" type="text" placeholder="Descripción" required disabled>
+                                </div>
+                            </div>                            
+                        </form>                
+                        <br>                        
+                        <table class="table table-striped display" id="rc_tabla">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Descripción</th>
+                                    <th>Cupos</th>                                
+                                </tr>
+                            </thead>
+                            <tbody id="rc_tbody">
+                                
+                            </tbody>                                                                                         
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <?php include 'core/view/modal_buscar_socio.php'?>
+        <?php include 'core/view/modal_competencia.php'?>
+        <?php include 'core/inc/footer_index.php'?>
+        <script src="/style/js/reserva_competencias.js" type="text/javascript"></script>
+    </body>
+</html>

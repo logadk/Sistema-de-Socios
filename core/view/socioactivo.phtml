@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+    <?php include 'core/inc/header_admin.php' ?>
+        <div class="container">            
+            <div class="row">
+                <div class="panel panel-info">
+                    <div class="panel-heading">Socio Activo</div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" action="" onsubmit="busca_sactivo(); return false">
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">Rut</label>
+                                <div class="col-sm-4 col-md-3">
+                                    <input id="sa_rut" class="form-control" type="text" placeholder="Rut" required>
+                                </div>
+                                <div class="col-sm-1 col-md-1">
+                                    <button type="submit" class="btn btn-primary" title="Buscar" id="sa_buscar"><span class="glyphicon glyphicon-search"></span></button>
+                                </div>                                
+                            </div>
+                        </form>
+                        <form class="form-horizontal" action="" onsubmit="add_sactivo(); return false">
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">Nombres</label>
+                                <div class="col-sm-7 col-md-5">
+                                    <input class="form-control" type="text" placeholder="Nombres" required id="sa_nombres">
+                                </div>
+                                <label class="col-sm-1 control-label">Sexo</label>
+                                <div class="col-sm-3 col-md-2">
+                                    <select class="form-control" id="sel_sexo">
+                                        <option>Masculino</option>
+                                        <option>Femenino</option>
+                                    </select>
+                                </div>                         
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-1 col-md-1 control-label">Nacimiento</label>
+                                <div class="col-sm-3 col-md-2">
+                                    <input class="form-control" type="date" placeholder="Nacimiento" required id="sa_nacimiento">
+                                </div>
+                                <label class="col-sm-1 col-md-1 col-lg-1 control-label">N° Título</label>
+                                <div class="col-sm-2 col-md-2 col-lg-2">
+                                    <input class="form-control" type="number" placeholder="Título" id="sa_titulo">
+                                </div>
+                                <label class="col-sm-2 col-md-1 control-label">Dpto/Casa</label>
+                                <div class="col-sm-3 col-md-2">
+                                    <input class="form-control" type="text" placeholder="Dpto/Casa" required id="sa_dpto">
+                                </div>
+                            </div>
+                            <div class="form-group">                                
+                                <label class="col-sm-1 control-label">Celular</label>
+                                <div class="col-sm-3 col-md-2">
+                                    <input class="form-control" type="number" placeholder="Celular" id="sa_celu">
+                                </div>
+                                <label class="col-sm-1 control-label">Email</label>
+                                <div class="col-sm-7 col-md-4">
+                                    <input class="form-control" type="email" placeholder="Email" id="sa_email">
+                                </div>
+                            </div>
+                            <div class="form-group">                                
+                                <div class="col-md-offset-1 col-sm-offset-1 col-sm-3 col-md-2">
+                                    <button type="submit" class="btn btn-primary" title="Guardar" id="sa_guardar"><span class="glyphicon glyphicon-floppy-disk"></span></button>
+                                </div>                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <?php include 'modal_sa_editar.php'?>
+        <?php include 'core/inc/footer_index.php'?>
+        <script src="style/js/fsocio_activo.js" type="text/javascript"></script>
+    </body>
+</html>
